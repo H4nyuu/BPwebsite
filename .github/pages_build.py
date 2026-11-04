@@ -633,7 +633,7 @@ def fix_public_paths(public, base):
         return value[1:-1] if value[:1] in ('"', "'") else value
     changed = 0
     for name, file in files.items():
-        if file.suffix not in ('.html', '.css', '.js', '.xml', '.json'):
+        if file.suffix not in ('.html', '.css', '.xml', '.json'):
             continue
         try:
             original = file.read_text(encoding='utf-8')
