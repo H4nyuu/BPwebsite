@@ -603,6 +603,12 @@ def fix_public_paths(public, base):
         if parsed.netloc != host or parsed.scheme not in ('http', 'https'):
             return value, None
         path = urllib.parse.unquote(parsed.path)
+        
+        original_url = urllib.parse.urlsplit(value)
+        if original_url.scheme in ('http', 'https') and prefix:
+            if path != prefix and not path.startswith(prefix + '/'):
+                return value, None
+
         rel = path[len(prefix) + 1:] if prefix and path.startswith(prefix + '/') else path.lstrip('/')
         found = existing(rel)
         # A relative URL which already resolves correctly needs no change.
