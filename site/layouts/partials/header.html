@@ -32,15 +32,17 @@
 {{ end }}
 
 <style>
-  /* 키보드로 선택한 메뉴 버튼과 링크를 명확하게 표시 */
+  /* 키보드로 선택한 메뉴와 첫 화면 화살표를 명확하게 표시 */
   #top-navbar button:focus-visible,
-  #top-navbar a:focus-visible {
+  #top-navbar a:focus-visible,
+  #home a.arrow-center:focus-visible {
     outline: 3px solid #005fcc !important;
     outline-offset: 3px;
     box-shadow: 0 0 0 6px #fff !important;
     border-radius: 4px;
   }
 </style>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.getElementById("top-navbar");
