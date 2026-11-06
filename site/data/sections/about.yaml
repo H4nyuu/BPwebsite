@@ -4,7 +4,7 @@ section:
   enable: true
   weight: 1
   showOnNavbar: true
-  template: "sections/portfolio-text.html"
+  template: "sections/portfoliotext.html"
 
 body: |
   ### 소개

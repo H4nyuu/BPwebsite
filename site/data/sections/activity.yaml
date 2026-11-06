@@ -4,7 +4,7 @@ section:
   enable: true
   weight: 2
   showOnNavbar: true
-  template: "sections/portfolio-text.html"
+  template: "sections/portfoliotext.html"
 
 body: |
   ### GitHub Pages를 활용한 웹페이지 배포 실습
