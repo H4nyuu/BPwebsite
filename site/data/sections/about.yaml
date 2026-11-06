@@ -1,0 +1,28 @@
+section:
+  name: "자기소개"
+  id: "about"
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: "sections/portfolio-text.html"
+
+body: |
+  ### 소개
+
+  전북대학교 컴퓨터인공지능학부에 재학 중인 2학년 김시온입니다.
+  게임 개발에 관심을 가지고 있습니다.
+
+  ### 관심 분야와 학습 목표
+
+  어렸을 때부터 게임을 즐기면서 직접 게임을 만들어 보고 싶다는 생각을 하게 되었습니다.
+  나중에 직접 제작한 게임을 Steam에 등록하는 것이 목표입니다.
+
+  이를 위한 첫 단계로 Unity 엔진을 활용해 간단한 게임을 만들고,
+  GitHub 저장소로 소스와 변경 이력을 관리해 볼 계획입니다.
+
+  ### 사용해 본 도구
+
+  수업 실습에서 GitHub와 GitHub Pages를 사용해 제공된 웹페이지 템플릿을
+  공개 저장소에 올리고 배포한 경험이 있습니다.
+
+  [GitHub 프로필 보기](https://github.com/H4nyuu)
