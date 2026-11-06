@@ -1,3 +1,5 @@
+title: "김시온 | 포트폴리오"
+
 module:
   hugoVersion:
     min: "0.163.0"
@@ -23,7 +25,8 @@ module:
     target: static/files
   - source: ../../node_modules/katex/dist/fonts
     target: static/fonts
-    
+
 params:
+  description: "김시온 자기소개 및 웹 개발 포트폴리오"
   newsletter:
     enable: false
