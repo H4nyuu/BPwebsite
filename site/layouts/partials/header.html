@@ -41,6 +41,25 @@
     box-shadow: 0 0 0 6px #fff !important;
     border-radius: 4px;
   }
+    /* 화살표 링크의 실제 선택 영역을 아이콘 위치에 맞춘다. */
+  #home a.arrow-center {
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home a.arrow-center .arrow {
+    position: static;
+    animation: none;
+    margin: 0;
+  }
+
 </style>
 
 <script>
