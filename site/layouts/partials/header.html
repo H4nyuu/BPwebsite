@@ -96,3 +96,21 @@
     });
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const controls = document.querySelectorAll(
+      "#top-navbar .navbar-brand, #navbar-toggler"
+    );
+
+    controls.forEach(function (control) {
+      control.addEventListener("focus", function () {
+        if (control.matches(":focus-visible")) {
+          window.scrollTo({
+            top: 0,
+            behavior: "instant"
+          });
+        }
+      });
+    });
+  });
+</script>
