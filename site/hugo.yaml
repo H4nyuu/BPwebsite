@@ -23,3 +23,7 @@ module:
     target: static/files
   - source: ../../node_modules/katex/dist/fonts
     target: static/fonts
+    
+params:
+  newsletter:
+    enable: false
