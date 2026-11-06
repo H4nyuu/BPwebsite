@@ -41,3 +41,37 @@
     border-radius: 4px;
   }
 </style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.getElementById("top-navbar");
+    const toggler = document.getElementById("navbar-toggler");
+    const menu = document.getElementById("top-nav-items");
+
+    if (!navbar || !toggler || !menu) return;
+
+    function closeMobileMenu() {
+      const mobileMenuVisible =
+        window.getComputedStyle(toggler).display !== "none";
+
+      if (mobileMenuVisible && menu.classList.contains("show")) {
+        toggler.click();
+      }
+    }
+
+    // Tab 등으로 내비게이션 밖에 이동하면 메뉴를 접는다.
+    navbar.addEventListener("focusout", function () {
+      setTimeout(function () {
+        if (!navbar.contains(document.activeElement)) {
+          closeMobileMenu();
+        }
+      }, 0);
+    });
+
+    // 메뉴 링크를 실행하면 메뉴를 접는다.
+    menu.addEventListener("click", function (event) {
+      if (event.target.closest("a[href]")) {
+        closeMobileMenu();
+      }
+    });
+  });
+</script>
